@@ -1,0 +1,21 @@
+Index: src/main/java/example/wireplan/DrawingController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/example/wireplan/DrawingController.java b/src/main/java/example/wireplan/DrawingController.java
+--- a/src/main/java/example/wireplan/DrawingController.java	
++++ b/src/main/java/example/wireplan/DrawingController.java	(date 1726948920078)
+@@ -120,10 +120,10 @@
+         gc.setStroke(Color.LIGHTGRAY);
+         gc.setLineWidth(2.0);
+ 
+-        for (double x = 0; x < width; x += 10) {
++        for (double x = 0; x < width; x += 15) {
+             gc.strokeLine(x, 0, x, height);
+         }
+-        for (double y = 0; y < height; y += 10) {
++        for (double y = 0; y < height; y += 15) {
+             gc.strokeLine(0, y, width, y);
+         }
+         gc.setStroke(Color.BLACK);

@@ -1,0 +1,18 @@
+Index: src/main/java/example/wireplan/DrawingController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/example/wireplan/DrawingController.java b/src/main/java/example/wireplan/DrawingController.java
+--- a/src/main/java/example/wireplan/DrawingController.java	
++++ b/src/main/java/example/wireplan/DrawingController.java	(date 1726946478461)
+@@ -106,6 +106,9 @@
+         mainGC.clearRect(0, 0, mainCanvas.getWidth(), mainCanvas.getHeight());
+         drawGrid(mainGC);
+ 
++        // Очищення полотна перед малюванням фігур
++        tempGC.clearRect(0, 0, tempCanvas.getWidth(), tempCanvas.getHeight());
++
+         for (Shape shape : shapes) {
+             shape.draw(mainGC);
+         }
